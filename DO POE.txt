@@ -1,0 +1,58 @@
+Assignment 1: 
+Steps:
+1)	Create repository in git hub
+2)	Connect the local and remote repository by using commands:
+git config  - -global user.name “username”
+git config  - -global user.email “email” 
+3)	create clone of remote repository in local by using :
+git clone “git repo address”
+4)	create branch using command:
+git branch feature 
+5)	add files in both branches and perform push and commit operations by using command:
+git add file.txt
+git commit –m “file added”
+git push
+6)	to pull the files from remote to local
+first create file in github and then pull in local by using command :
+git pull
+7)	merge:
+to perform merge of two branches first switch to main branch by using command
+git checkout main
+then merge it by command:
+git merge feature
+8)	rebase:
+to perform rebase of two branches first switch to main branch by using command
+git checkout main
+then rebase it by command:
+git rebase feature
+9)	squashing commit:
+command:
+git rebase –i HEAD~3
+press I and enter :wq and press enter 
+10)	to delete the branch
+firsth switch to that branch by using command
+git checkout feature
+then to delete that branch enter command:
+git branch –d feature
+git push –delete origin feature
+11)	to fork a repo search any project in github and fork it and clone it to local repository by using command: 
+git clone “address of repo”
+
+Assignment 2
+same procedure as in assignment 1
+
+Assignment 3
+check the runners available in gitlab 
+setting->CI/CD
+click on the runners install link
+install the runners and rename the file as "gitlab-runner.exe"
+create the blank repository in git lab
+add the .gitlab-ci.yml file and choose the template as "Bash"
+check the status of pipelin in CI/CD section 
+if it is shown failed then
+disable the shared runners
+then click on the pencil icon of available specific runners
+check the box of 3rd checkbox "run unstagged jobs"
+then save the changes
+and add the temp.txt file in repository and commit 
+now see the status of pipeline
